@@ -9,7 +9,7 @@ interface AuthenticatedRequest extends Request {
 }
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 // Increase payload limit for base64 screenshot uploads
 app.use(express.json({ limit: '20mb' }));
