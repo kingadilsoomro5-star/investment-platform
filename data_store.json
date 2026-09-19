@@ -1,0 +1,190 @@
+{
+  "users": [
+    {
+      "id": "usr_owner_001",
+      "name": "Adil Soomro (Owner)",
+      "email": "kingadilsoomro5@gmail.com",
+      "phone": "03127409287",
+      "password_hash": "2e5fb5b9ca156d312041ff1bfa0dda8bc56b91481022e0009022af13519eeb2d4e597f8e76ce461b10555b7e3df7a003e769b5f1b902c28f1f08c778f65b2226",
+      "salt": "admin_salt_investpro_2026",
+      "role": "admin",
+      "balance": 0,
+      "total_investment": 0,
+      "today_earning": 0,
+      "total_earnings": 0,
+      "total_withdrawals": 0,
+      "referral_code": "OWNER-PRO",
+      "created_at": "2026-09-01 10:00:00",
+      "status": "active"
+    },
+    {
+      "id": "usr_admin_backup",
+      "name": "Platform Administrator",
+      "email": "admin@investpro.com",
+      "phone": "03001234567",
+      "password_hash": "2e5fb5b9ca156d312041ff1bfa0dda8bc56b91481022e0009022af13519eeb2d4e597f8e76ce461b10555b7e3df7a003e769b5f1b902c28f1f08c778f65b2226",
+      "salt": "admin_salt_investpro_2026",
+      "role": "admin",
+      "balance": 0,
+      "total_investment": 0,
+      "today_earning": 0,
+      "total_earnings": 0,
+      "total_withdrawals": 0,
+      "referral_code": "ADMIN-SYS",
+      "created_at": "2026-09-01 10:00:00",
+      "status": "active"
+    },
+    {
+      "id": "usr_demo_001",
+      "name": "Muhammad Ali",
+      "email": "demo@investpro.com",
+      "phone": "03219876543",
+      "password_hash": "fd5bed4b5974efaa5fd2f1c905716f084afc7150655bcb339571b7c6e81f0bb82ab512c0d6f739d1084e7e2e1e1093ad35ecafe2e135a48a04cc0ea5dfdbc493",
+      "salt": "demo_salt_investpro_2026",
+      "role": "user",
+      "balance": 0,
+      "total_investment": 0,
+      "today_earning": 0,
+      "total_earnings": 0,
+      "total_withdrawals": 0,
+      "referral_code": "ALI-7890",
+      "created_at": "2026-09-18 14:20:00",
+      "status": "active"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan_1",
+      "name": "Starter Yield",
+      "investment_amount": 200,
+      "daily_earning": 10,
+      "duration_days": 30,
+      "status": "active",
+      "badge": "Entry Level",
+      "description": "Ideal starting tier for beginners to explore fractional yield allocations with minimal commitment."
+    },
+    {
+      "id": "plan_2",
+      "name": "Growth Plus",
+      "investment_amount": 300,
+      "daily_earning": 20,
+      "duration_days": 30,
+      "status": "popular",
+      "badge": "Most Popular",
+      "description": "Optimized daily accumulation cycle providing steady daily earnings."
+    },
+    {
+      "id": "plan_3",
+      "name": "Premier Boost",
+      "investment_amount": 400,
+      "daily_earning": 40,
+      "duration_days": 30,
+      "status": "active",
+      "badge": "High Yield",
+      "description": "Accelerated yield tier structured for active portfolio expansion."
+    },
+    {
+      "id": "plan_4",
+      "name": "Elite Vantage",
+      "investment_amount": 500,
+      "daily_earning": 55,
+      "duration_days": 30,
+      "status": "active",
+      "badge": "Top Tier",
+      "description": "Maximum daily payout plan among regular packages with priority processing."
+    },
+    {
+      "id": "plan_5",
+      "name": "Institutional Vault",
+      "investment_amount": 1000,
+      "daily_earning": 120,
+      "duration_days": 45,
+      "status": "coming_soon",
+      "badge": "Coming Soon",
+      "description": "Special syndicated investment pool currently under final compliance preparation."
+    }
+  ],
+  "investment_requests": [
+    {
+      "id": "req_101",
+      "user_id": "usr_demo_001",
+      "user_name": "Muhammad Ali",
+      "user_email": "demo@investpro.com",
+      "user_phone": "03219876543",
+      "plan_id": "plan_4",
+      "plan_name": "Elite Vantage (PKR 500)",
+      "amount": 500,
+      "daily_earning": 55,
+      "transaction_id": "TXN123456",
+      "screenshot": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600",
+      "status": "pending",
+      "admin_note": null,
+      "created_at": "2026-09-19 11:30:00"
+    },
+    {
+      "id": "req_102",
+      "user_id": "usr_sample_kashif",
+      "user_name": "Kashif Mehmood",
+      "user_email": "kashif.m@gmail.com",
+      "user_phone": "03451122334",
+      "plan_id": "plan_2",
+      "plan_name": "Growth Plus (PKR 300)",
+      "amount": 300,
+      "daily_earning": 20,
+      "transaction_id": "37379102831",
+      "screenshot": "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&q=80&w=600",
+      "status": "pending",
+      "admin_note": null,
+      "created_at": "2026-09-19 12:45:00"
+    }
+  ],
+  "active_investments": [],
+  "withdrawals": [
+    {
+      "id": "wdr_201",
+      "user_id": "usr_demo_001",
+      "user_name": "Muhammad Ali",
+      "user_email": "demo@investpro.com",
+      "amount": 150,
+      "payment_method": "EasyPaisa",
+      "account_number": "03219876543",
+      "account_title": "Muhammad Ali",
+      "status": "pending",
+      "admin_note": null,
+      "reference_id": "WDR-9021-EP",
+      "created_at": "2026-09-19 09:15:00"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_301",
+      "user_id": "usr_demo_001",
+      "user_name": "Muhammad Ali",
+      "type": "investment_request",
+      "amount": 500,
+      "reference": "TXN123456",
+      "status": "pending",
+      "description": "Investment request for Elite Vantage (PKR 500) awaiting owner approval",
+      "created_at": "2026-09-19 11:30:00"
+    },
+    {
+      "id": "tx_302",
+      "user_id": "usr_demo_001",
+      "user_name": "Muhammad Ali",
+      "type": "withdrawal_request",
+      "amount": 150,
+      "reference": "WDR-9021-EP",
+      "status": "pending",
+      "description": "Withdrawal request via EasyPaisa to 03219876543 awaiting verification",
+      "created_at": "2026-09-19 09:15:00"
+    }
+  ],
+  "payment_settings": {
+    "payment_method": "EasyPaisa",
+    "account_number": "03127409287",
+    "account_holder_name": "Adil Soomro",
+    "payment_instructions": "1. Open your EasyPaisa mobile app or dial *786#.\n2. Select Send Money > Mobile Account / EasyPaisa.\n3. Enter Account Number: 03127409287 and confirm Title: Adil Soomro.\n4. Send the exact investment plan amount.\n5. Copy the 3737 Transaction ID (TID) and take a screenshot of the successful payment slip.\n6. Upload the receipt proof below to submit your investment request for owner verification.",
+    "updated_at": "2026-09-19 10:00:00"
+  },
+  "sessions": []
+}

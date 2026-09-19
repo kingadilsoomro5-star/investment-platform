@@ -1,6 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import path from 'path';
 import crypto from 'crypto';
+import cors from 'cors';
 import { createServer as createViteServer } from 'vite';
 import { db, hashPassword, verifyPassword, UserRecord } from './server/db.js';
 
@@ -9,11 +10,24 @@ interface AuthenticatedRequest extends Request {
 }
 
 const app = express();
+
+app.use(cors({
+  origin: 'https://kingadilsoomro5-star.github.io',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 const PORT = Number(process.env.PORT) || 3000;
 
 // Increase payload limit for base64 screenshot uploads
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: true, limit: '20mb' }));
+app.get('/api/health', (req: Request, res: Response) => {
+  res.json({
+    ok: true,
+    service: 'investment-platform-api'
+  });
+});
 
 // ----------------------------------------------------
 // Authentication Middleware
